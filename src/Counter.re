@@ -24,5 +24,9 @@ let make = (_children) => {
     | Some(timerId) => Js.Global.clearInterval(timerId)
     | None => ()
     },
-  render: ({state}) => <div> (ReasonReact.stringToElement(string_of_int(state.count))) </div>
+  render: ({state}) =>
+    <div>
+      (ReasonReact.stringToElement(string_of_int(state.count)))
+      <BannerRe show=true message="Some message for my banner" />
+    </div>
 };

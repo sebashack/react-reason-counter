@@ -6,6 +6,6 @@
     "module": "commonjs"
   }],
   "sources": "src",
-  "suffix": ".bs.js",
+  "suffix": ".js",
   "refmt": 3
 }
